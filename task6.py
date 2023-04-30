@@ -1,9 +1,4 @@
-def summ(a,b):
-
+summ(a,b):
   return a+b
 print(summ)
-
-
-
-
-
+summ()
