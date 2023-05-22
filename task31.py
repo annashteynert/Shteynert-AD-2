@@ -1,19 +1,19 @@
-class Calculator:
- def add(self, num1, num2):
+class calculator1:
+ def func1(self, num1, num2):
   return num1 + num2
 
- def subtract(self, num1, num2):
+ def func2(self, num1, num2):
   return num1 - num2
 
- def multiply(self, num1, num2):
+ def func3(self, num1, num2):
   return num1 * num2
 
- def divide(self, num1, num2):
+ def func4(self, num1, num2):
   return num1 / num2
-calculator = Calculator()
+calculator = calculator1()
 num1=int(input('Введите число'))
 num2=int(input('Введите число'))
-print(calculator.add(num1, num2))
-print(calculator.subtract(num1, num2))
-print(calculator.multiply(num1, num2))
-print(calculator.divide(num1, num2))
+print(calculator.func1(num1, num2))
+print(calculator.func2(num1, num2))
+print(calculator.func3(num1, num2))
+print(calculator.func4(num1, num2))
