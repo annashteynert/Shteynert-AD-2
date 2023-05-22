@@ -1,27 +1,19 @@
-def add(a, b):
+class Calculator:
+ def add(self, num1, num2):
+  return num1 + num2
 
+ def subtract(self, num1, num2):
+  return num1 - num2
 
-    return a + b
+ def multiply(self, num1, num2):
+  return num1 * num2
 
-
-def subtract(a, b):
-    return a - b
-
-
-def multiply(a, b):
-    return a * b
-
-
-def divide(a, b):
-    return a / b
-
-
-import calculator
-
-a = 10
-b = 5
-
-print("Сложение:", calculator.add(a, b))
-print("Вычитание:", calculator.subtract(a, b))
-print("Умножение:", calculator.multiply(a, b))
-print("Деление:", calculator.divide(a, b))
+ def divide(self, num1, num2):
+  return num1 / num2
+calculator = Calculator()
+num1=int(input('Введите число'))
+num2=int(input('Введите число'))
+print(calculator.add(num1, num2))
+print(calculator.subtract(num1, num2))
+print(calculator.multiply(num1, num2))
+print(calculator.divide(num1, num2))
