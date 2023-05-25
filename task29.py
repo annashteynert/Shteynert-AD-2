@@ -1,13 +1,7 @@
-def function(func):
-
-
-    func_1 = str(func)
-    return "".join(reversed(func_1))
-
-
-
-def function2():
-    print("функция")
-
-
-reversed_func = function(function2)
+def reverse_str(string):
+ string_list = list(string)
+ string_list.reverse()
+ return ''.join(string_list)
+string1 = input("Введите строку: ")
+reversed_str = reverse_str(string1)
+print("Результат:", reversed_str)
