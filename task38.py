@@ -1,3 +1,8 @@
-with open("text.txt", "r") as file:
- file1 = file.readlines()
- print("".join(file1))
+try:
+ file = open("text.txt", "r")
+ text = file.readlines()
+ for i in text:
+  print(i.strip())
+ file.close()
+except FileNotFoundError:
+    print("Файл не найден")
