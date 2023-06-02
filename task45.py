@@ -1,12 +1,7 @@
-while True:
- try:
-  x = float(input("Введите первое число: "))
-  y = float(input("Введите второе число: "))
-  division = x / y
-  print(division)
-  break
- except ValueError:
-  print("Ошибка")
- except ZeroDivisionError:
-  print("Ошибка")
-  break
+import os
+
+if os.path.exists('text.txt'):
+ with open('text.txt', 'r') as result:
+    print(result.read())
+else:
+    print('file not found')
