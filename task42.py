@@ -1,7 +1,4 @@
-
-import os
-
-if os.access("text.txt", os.F_OK):
- print("Файл существует")
-else:
- print("Файл не найден")
+import glob
+result = glob.glob('*')
+for i in result:
+ print(i)
