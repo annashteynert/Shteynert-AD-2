@@ -1,14 +1,13 @@
 import os
 
-info = input('название файла:')
-if os.path.exists(info):
+result = input('Введите имя файла: ')
+if os.path.exists(result):
  try:
-  with open(info, 'r') as file:
+  with open(result, 'r') as file:
    print(file.read())
- except Exception as file1:
-   print(f"Ошибка: {file1}")
+ except IOError:
+  print('Error')
 else:
- print("Файл не существует")
-
+ print('Error')
 
 
