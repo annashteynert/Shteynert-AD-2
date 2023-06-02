@@ -1,7 +1,12 @@
-import os
 
-file1 = os.getcwd()
-file2 = os.listdir(file1)
-
-for i in file2:
- print(i)
+try:
+ x = float(input("Введите первое число: "))
+ y = float(input("Введите второе число: "))
+ if y == 0:
+  raise ZeroDivisionError
+ result = x / y
+ print(result)
+except ValueError:
+ print("Error")
+except ZeroDivisionError:
+ print("Error")
