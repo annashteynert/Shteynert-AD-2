@@ -1,6 +1,8 @@
-import os
 
-if os.path.exists("text.txt"):
- print("Файл существует")
+import pathlib
+
+result = pathlib.Path("text.txt")
+if result.exists():
+ print("file exists")
 else:
- print("Файл не найден")
+ print("file not found")
