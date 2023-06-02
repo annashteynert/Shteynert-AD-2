@@ -1,2 +1,2 @@
-from pathlib import Path
-Path("new_file.txt").write_text("Hello, world!")
+with open("new_file.txt", "a") as result:
+ result.write("Hello, world!")
