@@ -1,6 +1,8 @@
-import os
+import pathlib
 
-if os.path.exists("text.txt"):
- print("Файл существует")
+result = pathlib.Path("my_folder")
+if not result.exists():
+ result.mkdir()
+ print("result created")
 else:
- print("Файл не найден")
+ print("result already exists")
