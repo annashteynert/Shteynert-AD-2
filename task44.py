@@ -4,8 +4,8 @@ try:
  y = float(input("Введите второе число: "))
  if y == 0:
   raise ZeroDivisionError
- result = x / y
- print(result)
+ division = x / y
+ print(division)
 except ValueError:
  print("Error")
 except ZeroDivisionError:
