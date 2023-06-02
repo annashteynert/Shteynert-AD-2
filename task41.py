@@ -1,11 +1,6 @@
 import os
 
-directory = 'my_folder'
-if not os.path.exists(directory):
-  try:
-   os.mkdir(directory)
-   print(f"Создание  '{directory}' прошло успешно ")
-  except OSError:
-   print(f"Директория '{directory}' не создана")
+if os.path.exists("text.txt"):
+ print("Файл существует")
 else:
-   print(f"Директория '{directory}' уже есть")
+ print("Файл не найден")
